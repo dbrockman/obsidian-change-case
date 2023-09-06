@@ -29,8 +29,8 @@ export default class ChangeCasePlugin extends Plugin {
 			snakeCase,
 		]) {
 			this.addCommand({
-				id: "change-case-to-" + paramCase(fn.name),
-				name: "Change Case: " + noCase(fn.name),
+				id: `change-case-to-${paramCase(fn.name)}`,
+				name: `Change Case: ${noCase(fn.name)}`,
 				editorCallback: (editor: Editor, _view: MarkdownView) => {
 					const selectedText = editor.getSelection();
 					if (selectedText) {
