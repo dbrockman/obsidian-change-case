@@ -24,7 +24,7 @@
 		"builtin-modules": "3.3.0",
 		"esbuild": "0.19.2",
 		"obsidian": "latest",
-		"tslib": "2.4.0",
+		"tslib": "2.6.2",
 		"tsx": "^3.12.8",
 		"typescript": "5.2.2"
 	}
