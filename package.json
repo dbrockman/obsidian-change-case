@@ -30,6 +30,10 @@
 		"tsx": "^3.12.8",
 		"typescript": "^5.2.2"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dbrockman/obsidian-change-case.git"
+	},
 	"config": {
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
