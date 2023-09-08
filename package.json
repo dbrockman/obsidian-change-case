@@ -11,7 +11,7 @@
 		"test": "node --loader tsx --test ./test/index.ts"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "David Brockman",
 	"license": "MIT",
 	"dependencies": {
 		"change-case": "4.1.2",
