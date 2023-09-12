@@ -1,4 +1,4 @@
-import { Editor, MarkdownView, Plugin } from "obsidian";
+import { Editor, Plugin } from "obsidian";
 import { commands } from "./commands";
 
 export default class ChangeCasePlugin extends Plugin {
@@ -7,7 +7,7 @@ export default class ChangeCasePlugin extends Plugin {
 			this.addCommand({
 				id,
 				name,
-				editorCallback: (editor: Editor, _view: MarkdownView) => {
+				editorCallback: (editor: Editor): void => {
 					const replacement = fn(editor.getSelection());
 					if (replacement !== null) {
 						editor.replaceSelection(replacement);
