@@ -27,7 +27,7 @@
 		"obsidian": "^1.4.11",
 		"semantic-release": "^21.1.1",
 		"tslib": "^2.6.2",
-		"tsx": "^3.12.8",
+		"tsx": "^3.12.9",
 		"typescript": "^5.2.2"
 	},
 	"repository": {
