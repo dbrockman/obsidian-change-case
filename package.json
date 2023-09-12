@@ -24,7 +24,7 @@
 		"builtin-modules": "^3.3.0",
 		"cz-conventional-changelog": "^3.3.0",
 		"esbuild": "^0.19.2",
-		"obsidian": "^1.4.4",
+		"obsidian": "^1.4.11",
 		"semantic-release": "^21.1.1",
 		"tslib": "^2.6.2",
 		"tsx": "^3.12.8",
