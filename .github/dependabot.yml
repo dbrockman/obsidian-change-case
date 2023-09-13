@@ -9,7 +9,7 @@ updates:
       interval: "daily"
     commit-message:
       prefix: fix
-      prefix-development: chore
+      prefix-development: fix
       include: scope
   - package-ecosystem: "github-actions"
     directory: "/"
