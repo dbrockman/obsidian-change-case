@@ -8,10 +8,7 @@ export default class ChangeCasePlugin extends Plugin {
 				id,
 				name,
 				editorCallback: (editor: Editor): void => {
-					const replacement = fn(editor.getSelection());
-					if (replacement !== null) {
-						editor.replaceSelection(replacement);
-					}
+					editor.replaceSelection(fn(editor.getSelection()));
 				},
 			});
 		}
