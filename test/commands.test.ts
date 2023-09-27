@@ -3,7 +3,7 @@ import test from "node:test";
 import { ChangeCaseCommand, commands } from "../src/commands";
 
 const commands_map = new Map<string, ChangeCaseCommand>(
-	commands().map((cmd) => [cmd.id, cmd])
+	commands.map((cmd) => [cmd.id, cmd])
 );
 
 const tested_command_ids = new Set<string>();

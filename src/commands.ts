@@ -20,25 +20,24 @@ export interface ChangeCaseCommand {
 	fn: (str: string) => string;
 }
 
-export const commands = (): ChangeCaseCommand[] =>
-	[
-		{ id: "lower", fn: lowerCase },
-		{ id: "upper", fn: upperCase },
-		{ id: "camel", fn: camelCase },
-		{ id: "capital", fn: capitalCase },
-		{ id: "constant", fn: constantCase },
-		{ id: "dot", fn: dotCase },
-		{ id: "header", fn: headerCase },
-		{ id: "no", fn: noCase },
-		{ id: "param", fn: paramCase },
-		{ id: "pascal", fn: pascalCase },
-		{ id: "path", fn: pathCase },
-		{ id: "sentence", fn: sentenceCase },
-		{ id: "snake", fn: snakeCase },
-	].map(({ id, fn }) => {
-		return {
-			id,
-			name: fn(id + " case"),
-			fn,
-		};
-	});
+export const commands: ChangeCaseCommand[] = [
+	{ id: "lower", fn: lowerCase },
+	{ id: "upper", fn: upperCase },
+	{ id: "camel", fn: camelCase },
+	{ id: "capital", fn: capitalCase },
+	{ id: "constant", fn: constantCase },
+	{ id: "dot", fn: dotCase },
+	{ id: "header", fn: headerCase },
+	{ id: "no", fn: noCase },
+	{ id: "param", fn: paramCase },
+	{ id: "pascal", fn: pascalCase },
+	{ id: "path", fn: pathCase },
+	{ id: "sentence", fn: sentenceCase },
+	{ id: "snake", fn: snakeCase },
+].map(({ id, fn }) => {
+	return {
+		id,
+		name: fn(id + " case"),
+		fn,
+	};
+});

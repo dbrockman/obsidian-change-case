@@ -1,6 +1,6 @@
 # Change Case Obsidian Plugin
 
-Plugin to let you change the case (UPPER CASE, camelCase, snake_case, etc) of the current selection.
+Plugin to let you change the case (UPPER CASE, camelCase, snake_case, etc) of the selected text.
 
 This is a plugin for Obsidian (https://obsidian.md).
 
@@ -19,3 +19,7 @@ This plugin adds the following commands:
 - `Change Case: path/case`
 - `Change Case: Sentence case`
 - `Change Case: snake_case`
+
+It also adds the command `Change Case: Select from list`. This will present a selection modal with the options listed above. This is easier to use on mobile.
+
+These commands can be used with multiple selections.
