@@ -13,37 +13,32 @@ import {
 	sentenceCase,
 	snakeCase,
 } from "change-case";
-import { splitTrim } from "./split-trim";
-
-const transform = (str: string, fn: (str: string) => string): string | null => {
-	const [leading_whitespace, s1, trailing_whitespace] = splitTrim(str);
-	const s2 = s1 && fn(s1);
-	return s2 !== s1 ? leading_whitespace + s2 + trailing_whitespace : null;
-};
 
 export interface ChangeCaseCommand {
 	id: string;
 	name: string;
-	fn: (str: string) => string | null;
+	fn: (str: string) => string;
 }
 
 export const commands = (): ChangeCaseCommand[] =>
 	[
-		{ name: "lower", fn: lowerCase },
-		{ name: "upper", fn: upperCase },
-		{ name: "camel", fn: camelCase },
-		{ name: "capital", fn: capitalCase },
-		{ name: "constant", fn: constantCase },
-		{ name: "dot", fn: dotCase },
-		{ name: "header", fn: headerCase },
-		{ name: "no", fn: noCase },
-		{ name: "param", fn: paramCase },
-		{ name: "pascal", fn: pascalCase },
-		{ name: "path", fn: pathCase },
-		{ name: "sentence", fn: sentenceCase },
-		{ name: "snake", fn: snakeCase },
-	].map(({ name, fn }) => ({
-		id: "change-case-" + name,
-		name: fn(name + " case"),
-		fn: (str: string) => transform(str, fn),
-	}));
+		{ id: "lower", fn: lowerCase },
+		{ id: "upper", fn: upperCase },
+		{ id: "camel", fn: camelCase },
+		{ id: "capital", fn: capitalCase },
+		{ id: "constant", fn: constantCase },
+		{ id: "dot", fn: dotCase },
+		{ id: "header", fn: headerCase },
+		{ id: "no", fn: noCase },
+		{ id: "param", fn: paramCase },
+		{ id: "pascal", fn: pascalCase },
+		{ id: "path", fn: pathCase },
+		{ id: "sentence", fn: sentenceCase },
+		{ id: "snake", fn: snakeCase },
+	].map(({ id, fn }) => {
+		return {
+			id,
+			name: fn(id + " case"),
+			fn,
+		};
+	});
