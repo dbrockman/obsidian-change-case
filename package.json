@@ -20,10 +20,10 @@
 	},
 	"devDependencies": {
 		"@semantic-release/git": "^10.0.1",
-		"@types/node": "^20.7.0",
+		"@types/node": "^20.7.1",
 		"builtin-modules": "^3.3.0",
 		"cz-conventional-changelog": "^3.3.0",
-		"esbuild": "^0.19.3",
+		"esbuild": "^0.19.4",
 		"obsidian": "^1.4.11",
 		"semantic-release": "^22.0.5",
 		"tslib": "^2.6.2",
