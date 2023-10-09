@@ -15,8 +15,8 @@
 	"license": "MIT",
 	"dependencies": {
 		"change-case": "4.1.2",
-		"lower-case": "2.0.2",
-		"upper-case": "2.0.2"
+		"lower-case": "3.0.0",
+		"upper-case": "3.0.0"
 	},
 	"devDependencies": {
 		"@semantic-release/git": "^10.0.1",

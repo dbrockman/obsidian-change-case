@@ -9,11 +9,11 @@ dependencies:
     specifier: 4.1.2
     version: 4.1.2
   lower-case:
-    specifier: 2.0.2
-    version: 2.0.2
+    specifier: 3.0.0
+    version: 3.0.0
   upper-case:
-    specifier: 2.0.2
-    version: 2.0.2
+    specifier: 3.0.0
+    version: 3.0.0
 
 devDependencies:
   '@semantic-release/git':
@@ -33,7 +33,7 @@ devDependencies:
     version: 0.19.4
   obsidian:
     specifier: ^1.4.11
-    version: 1.4.11(@codemirror/state@6.2.1)(@codemirror/view@6.21.2)
+    version: 1.4.11(@codemirror/state@6.2.1)(@codemirror/view@6.21.3)
   semantic-release:
     specifier: ^22.0.5
     version: 22.0.5(typescript@5.2.2)
@@ -75,8 +75,8 @@ packages:
     resolution: {integrity: sha512-RupHSZ8+OjNT38zU9fKH2sv+Dnlr8Eb8sl4NOnnqz95mCFTZUaiRP8Xv5MeeaG0px2b8Bnfe7YGwCV3nsBhbuw==}
     dev: true
 
-  /@codemirror/view@6.21.2:
-    resolution: {integrity: sha512-EZ/Q1WeMWVarWiZHcy4E2aOjjDySeipVkPawOIu2iViZ1YNaZXPBqJBd9/2zLJtN/MrXKm0V1mHB8Cxn50t91A==}
+  /@codemirror/view@6.21.3:
+    resolution: {integrity: sha512-8l1aSQ6MygzL4Nx7GVYhucSXvW4jQd0F6Zm3v9Dg+6nZEfwzJVqi4C2zHfDljID+73gsQrWp9TgHc81xU15O4A==}
     dependencies:
       '@codemirror/state': 6.2.1
       style-mod: 4.1.0
@@ -2300,6 +2300,11 @@ packages:
       tslib: 2.6.2
     dev: false
 
+  /lower-case@3.0.0:
+    resolution: {integrity: sha512-KvfWLLeuCsAiu/qKewwRySKdF9ZUU9kuYMNxQWkLBvAe43t1013h7Cef6+I1BJAo9dpioYcM5rXwdQjCoJ3U/A==}
+    deprecated: Use `str.toLocaleLowerCase` or `str.toLowerCase`
+    dev: false
+
   /lru-cache@10.0.1:
     resolution: {integrity: sha512-IJ4uwUTi2qCccrioU6g9g/5rvvVl13bsdczUUcqbciD9iLr095yj8DQKdObriEvuNSx325N1rV1O0sJFszx75g==}
     engines: {node: 14 || >=16.14}
@@ -2535,14 +2540,14 @@ packages:
       - which
       - write-file-atomic
 
-  /obsidian@1.4.11(@codemirror/state@6.2.1)(@codemirror/view@6.21.2):
+  /obsidian@1.4.11(@codemirror/state@6.2.1)(@codemirror/view@6.21.3):
     resolution: {integrity: sha512-BCVYTvaXxElJMl6MMbDdY/CGK+aq18SdtDY/7vH8v6BxCBQ6KF4kKxL0vG9UZ0o5qh139KpUoJHNm+6O5dllKA==}
     peerDependencies:
       '@codemirror/state': ^6.0.0
       '@codemirror/view': ^6.0.0
     dependencies:
       '@codemirror/state': 6.2.1
-      '@codemirror/view': 6.21.2
+      '@codemirror/view': 6.21.3
       '@types/codemirror': 5.60.8
       moment: 2.29.4
     dev: true
@@ -3354,6 +3359,11 @@ packages:
     resolution: {integrity: sha512-KgdgDGJt2TpuwBUIjgG6lzw2GWFRCW9Qkfkiv0DxqHHLYJHmtmdUIKcZd8rHgFSjopVTlw6ggzCm1b8MFQwikg==}
     dependencies:
       tslib: 2.6.2
+    dev: false
+
+  /upper-case@3.0.0:
+    resolution: {integrity: sha512-q6ZAk+RaBO94GGFpdM6GJ2pOXx6Ky/BK9xluGUqMYvY6qZjFN7RPbzqcd+OBru8tRFlcLcS40AIrIq48VhcTIA==}
+    deprecated: Use `str.toLocaleUpperCase` or `str.toUpperCase`
     dev: false
 
   /uri-js@4.4.1:
