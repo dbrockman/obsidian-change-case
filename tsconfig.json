@@ -11,6 +11,12 @@
 		"importHelpers": true,
 		"isolatedModules": true,
 		"strictNullChecks": true,
+		"allowImportingTsExtensions": true,
+		"noEmit": true,
+		"types": [
+			"node",
+			"./declarations.d.ts"
+		],
 		"lib": [
 			"DOM",
 			"ES5",
