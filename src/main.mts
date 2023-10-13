@@ -6,40 +6,35 @@ import {
 	FuzzySuggestModal,
 	Plugin,
 } from "obsidian";
-import { ChangeCaseCommand, commands } from "./commands";
+import { Cmd, CmdFn, CmdId, commands } from "./commands.mjs";
+import { getLang } from "./language.mjs";
 
-function normalizeSelection({
+const normalizeSelection = ({
 	anchor,
 	head,
-}: EditorSelection): [from: EditorPosition, to: EditorPosition] {
-	if (anchor.line < head.line) {
-		return [anchor, head];
-	}
-	if (anchor.line > head.line) {
-		return [head, anchor];
-	}
-	if (anchor.ch < head.ch) {
-		return [anchor, head];
-	}
-	return [head, anchor];
-}
+}: EditorSelection): [from: EditorPosition, to: EditorPosition] =>
+	anchor.line < head.line
+		? [anchor, head]
+		: anchor.line > head.line
+		? [head, anchor]
+		: anchor.ch < head.ch
+		? [anchor, head]
+		: [head, anchor];
 
-function replaceAllSelections(
-	editor: Editor,
-	fn: (str: string) => string
-): void {
+const replaceAllSelections = (editor: Editor, fn: CmdFn): void => {
 	if (editor.somethingSelected()) {
+		const locale = getLang();
 		editor.transaction({
 			changes: editor.listSelections().map((selection) => {
 				const [from, to] = normalizeSelection(selection);
-				const str = editor.getRange(from, to);
-				return { from, to, text: fn(str) };
+				const str = editor.getRange(from, to).normalize();
+				return { from, to, text: fn(str, { locale }) };
 			}),
 		});
 	}
-}
+};
 
-class SelectCaseModal extends FuzzySuggestModal<ChangeCaseCommand> {
+class SelectCaseModal extends FuzzySuggestModal<Cmd<CmdId>> {
 	private _editor: Editor;
 
 	constructor(app: App, editor: Editor) {
@@ -47,15 +42,15 @@ class SelectCaseModal extends FuzzySuggestModal<ChangeCaseCommand> {
 		this._editor = editor;
 	}
 
-	getItems(): ChangeCaseCommand[] {
+	getItems(): Cmd<CmdId>[] {
 		return commands;
 	}
 
-	getItemText(cmd: ChangeCaseCommand): string {
+	getItemText(cmd: Cmd<CmdId>): string {
 		return cmd.name;
 	}
 
-	onChooseItem(cmd: ChangeCaseCommand) {
+	onChooseItem(cmd: Cmd<CmdId>): void {
 		replaceAllSelections(this._editor, cmd.fn);
 	}
 }
