@@ -19,14 +19,14 @@
 	},
 	"devDependencies": {
 		"@semantic-release/git": "^10.0.1",
-		"@types/node": "^20.8.10",
+		"@types/node": "^20.9.0",
 		"builtin-modules": "^3.3.0",
 		"cz-conventional-changelog": "^3.3.0",
 		"esbuild": "^0.19.5",
 		"obsidian": "^1.4.11",
 		"semantic-release": "^22.0.7",
 		"tslib": "^2.6.2",
-		"tsx": "^3.14.0",
+		"tsx": "^4.1.1",
 		"typescript": "^5.2.2"
 	},
 	"engines": {
