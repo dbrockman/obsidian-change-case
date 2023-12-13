@@ -9,7 +9,7 @@
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
 		"version": "node version-bump.mjs && git add manifest.json versions.json",
 		"semantic-release": "semantic-release",
-		"test": "node --loader tsx --test ./test/index.mts"
+		"test": "find ./test -type f -name '*.test.mts' | xargs node --import tsx/esm --test"
 	},
 	"keywords": [],
 	"author": "David Brockman",
