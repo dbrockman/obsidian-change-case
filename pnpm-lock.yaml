@@ -14,23 +14,23 @@ devDependencies:
     specifier: ^10.0.1
     version: 10.0.1(semantic-release@23.0.2)
   '@types/node':
-    specifier: ^20.11.24
-    version: 20.11.24
+    specifier: ^20.11.25
+    version: 20.11.25
   builtin-modules:
     specifier: ^3.3.0
     version: 3.3.0
   cz-conventional-changelog:
     specifier: ^3.3.0
-    version: 3.3.0(@types/node@20.11.24)(typescript@5.3.3)
+    version: 3.3.0(@types/node@20.11.25)(typescript@5.4.2)
   esbuild:
     specifier: ^0.20.1
     version: 0.20.1
   obsidian:
     specifier: ^1.5.7
-    version: 1.5.7(@codemirror/state@6.4.1)(@codemirror/view@6.25.0)
+    version: 1.5.7(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)
   semantic-release:
     specifier: ^23.0.2
-    version: 23.0.2(typescript@5.3.3)
+    version: 23.0.2(typescript@5.4.2)
   tslib:
     specifier: ^2.6.2
     version: 2.6.2
@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^4.7.1
     version: 4.7.1
   typescript:
-    specifier: ^5.3.3
-    version: 5.3.3
+    specifier: ^5.4.2
+    version: 5.4.2
 
 packages:
 
@@ -71,8 +71,8 @@ packages:
     resolution: {integrity: sha512-QkEyUiLhsJoZkbumGZlswmAhA7CBU02Wrz7zvH4SrcifbsqwlXShVXg65f3v/ts57W3dqyamEriMhij1Z3Zz4A==}
     dev: true
 
-  /@codemirror/view@6.25.0:
-    resolution: {integrity: sha512-XnMGOm6qXB8znzCko0N7k97qZayVdvqpA0JebxA5fHtgBjC/XlCPhH9TK92TahsoCKMPQlaTCUep06Dwj/+GXQ==}
+  /@codemirror/view@6.25.1:
+    resolution: {integrity: sha512-2LXLxsQnHDdfGzDvjzAwZh2ZviNJm7im6tGpa0IONIDnFd8RZ80D2SNi8PDi6YjKcMoMRK20v6OmKIdsrwsyoQ==}
     dependencies:
       '@codemirror/state': 6.4.1
       style-mod: 4.1.2
@@ -103,7 +103,7 @@ packages:
     dev: true
     optional: true
 
-  /@commitlint/load@19.0.3(@types/node@20.11.24)(typescript@5.3.3):
+  /@commitlint/load@19.0.3(@types/node@20.11.25)(typescript@5.4.2):
     resolution: {integrity: sha512-18Tk/ZcDFRKIoKfEcl7kC+bYkEQ055iyKmGsYDoYWpKf6FUvBrP9bIWapuy/MB+kYiltmP9ITiUx6UXtqC9IRw==}
     engines: {node: '>=v18'}
     requiresBuild: true
@@ -113,8 +113,8 @@ packages:
       '@commitlint/resolve-extends': 19.0.3
       '@commitlint/types': 19.0.3
       chalk: 5.3.0
-      cosmiconfig: 8.3.6(typescript@5.3.3)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.11.24)(cosmiconfig@8.3.6)(typescript@5.3.3)
+      cosmiconfig: 8.3.6(typescript@5.4.2)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.11.25)(cosmiconfig@8.3.6)(typescript@5.4.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -714,7 +714,7 @@ packages:
       import-from-esm: 1.3.3
       lodash-es: 4.17.21
       micromatch: 4.0.5
-      semantic-release: 23.0.2(typescript@5.3.3)
+      semantic-release: 23.0.2(typescript@5.4.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -743,7 +743,7 @@ packages:
       lodash: 4.17.21
       micromatch: 4.0.5
       p-reduce: 2.1.0
-      semantic-release: 23.0.2(typescript@5.3.3)
+      semantic-release: 23.0.2(typescript@5.4.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -769,7 +769,7 @@ packages:
       lodash-es: 4.17.21
       mime: 4.0.1
       p-filter: 4.1.0
-      semantic-release: 23.0.2(typescript@5.3.3)
+      semantic-release: 23.0.2(typescript@5.4.2)
       url-join: 5.0.0
     transitivePeerDependencies:
       - supports-color
@@ -792,7 +792,7 @@ packages:
       rc: 1.2.8
       read-pkg: 9.0.1
       registry-auth-token: 5.0.2
-      semantic-release: 23.0.2(typescript@5.3.3)
+      semantic-release: 23.0.2(typescript@5.4.2)
       semver: 7.6.0
       tempy: 3.1.0
     dev: true
@@ -813,7 +813,7 @@ packages:
       into-stream: 7.0.0
       lodash-es: 4.17.21
       read-pkg-up: 11.0.0
-      semantic-release: 23.0.2(typescript@5.3.3)
+      semantic-release: 23.0.2(typescript@5.4.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -838,7 +838,7 @@ packages:
     resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
     requiresBuild: true
     dependencies:
-      '@types/node': 20.11.24
+      '@types/node': 20.11.25
     dev: true
     optional: true
 
@@ -846,8 +846,8 @@ packages:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: true
 
-  /@types/node@20.11.24:
-    resolution: {integrity: sha512-Kza43ewS3xoLgCEpQrsT+xRo/EJej1y0kVYGiLFE1NEODXGzTfwiC6tXTLMQskn1X4/Rjlh0MQUvx9W+L9long==}
+  /@types/node@20.11.25:
+    resolution: {integrity: sha512-TBHyJxk2b7HceLVGFcpAUjsa5zIdsPWlR6XHfyGzd0SFu+/NFgQgMAl96MSDZgQDvJAvV6BKsFOrt6zIL09JDw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1153,13 +1153,13 @@ packages:
     requiresBuild: true
     dev: true
 
-  /commitizen@4.3.0(@types/node@20.11.24)(typescript@5.3.3):
+  /commitizen@4.3.0(@types/node@20.11.25)(typescript@5.4.2):
     resolution: {integrity: sha512-H0iNtClNEhT0fotHvGV3E9tDejDeS04sN1veIebsKYGMuGscFaswRoYJKmT3eW85eIJAs0F28bG2+a/9wCOfPw==}
     engines: {node: '>= 12'}
     hasBin: true
     dependencies:
       cachedir: 2.3.0
-      cz-conventional-changelog: 3.3.0(@types/node@20.11.24)(typescript@5.3.3)
+      cz-conventional-changelog: 3.3.0(@types/node@20.11.25)(typescript@5.4.2)
       dedent: 0.7.0
       detect-indent: 6.1.0
       find-node-modules: 2.1.3
@@ -1239,7 +1239,7 @@ packages:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
     dev: true
 
-  /cosmiconfig-typescript-loader@5.0.0(@types/node@20.11.24)(cosmiconfig@8.3.6)(typescript@5.3.3):
+  /cosmiconfig-typescript-loader@5.0.0(@types/node@20.11.25)(cosmiconfig@8.3.6)(typescript@5.4.2):
     resolution: {integrity: sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==}
     engines: {node: '>=v16'}
     requiresBuild: true
@@ -1248,14 +1248,14 @@ packages:
       cosmiconfig: '>=8.2'
       typescript: '>=4'
     dependencies:
-      '@types/node': 20.11.24
-      cosmiconfig: 8.3.6(typescript@5.3.3)
+      '@types/node': 20.11.25
+      cosmiconfig: 8.3.6(typescript@5.4.2)
       jiti: 1.21.0
-      typescript: 5.3.3
+      typescript: 5.4.2
     dev: true
     optional: true
 
-  /cosmiconfig@8.3.6(typescript@5.3.3):
+  /cosmiconfig@8.3.6(typescript@5.4.2):
     resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
     engines: {node: '>=14'}
     requiresBuild: true
@@ -1269,11 +1269,11 @@ packages:
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
-      typescript: 5.3.3
+      typescript: 5.4.2
     dev: true
     optional: true
 
-  /cosmiconfig@9.0.0(typescript@5.3.3):
+  /cosmiconfig@9.0.0(typescript@5.4.2):
     resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1286,7 +1286,7 @@ packages:
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
-      typescript: 5.3.3
+      typescript: 5.4.2
     dev: true
 
   /cross-spawn@7.0.3:
@@ -1305,18 +1305,18 @@ packages:
       type-fest: 1.4.0
     dev: true
 
-  /cz-conventional-changelog@3.3.0(@types/node@20.11.24)(typescript@5.3.3):
+  /cz-conventional-changelog@3.3.0(@types/node@20.11.25)(typescript@5.4.2):
     resolution: {integrity: sha512-U466fIzU5U22eES5lTNiNbZ+d8dfcHcssH4o7QsdWaCcRs/feIPCxKYSWkYBNs5mny7MvEfwpTLWjvbm94hecw==}
     engines: {node: '>= 10'}
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.3.0(@types/node@20.11.24)(typescript@5.3.3)
+      commitizen: 4.3.0(@types/node@20.11.25)(typescript@5.4.2)
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
       word-wrap: 1.2.5
     optionalDependencies:
-      '@commitlint/load': 19.0.3(@types/node@20.11.24)(typescript@5.3.3)
+      '@commitlint/load': 19.0.3(@types/node@20.11.25)(typescript@5.4.2)
     transitivePeerDependencies:
       - '@types/node'
       - typescript
@@ -2435,14 +2435,14 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /obsidian@1.5.7(@codemirror/state@6.4.1)(@codemirror/view@6.25.0):
+  /obsidian@1.5.7(@codemirror/state@6.4.1)(@codemirror/view@6.25.1):
     resolution: {integrity: sha512-DNcvQJ6TvMflHZqWfO9cLGbOUbKTy2KBi6B6vjo5RG8XsftKZZq1zS/OQFhII2BnXK/DWan/lUcb2JYxfM3p5A==}
     peerDependencies:
       '@codemirror/state': ^6.0.0
       '@codemirror/view': ^6.0.0
     dependencies:
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.25.0
+      '@codemirror/view': 6.25.1
       '@types/codemirror': 5.60.8
       moment: 2.29.4
     dev: true
@@ -2795,7 +2795,7 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /semantic-release@23.0.2(typescript@5.3.3):
+  /semantic-release@23.0.2(typescript@5.4.2):
     resolution: {integrity: sha512-OnVYJ6Xgzwe1x8MKswba7RU9+5djS1MWRTrTn5qsq3xZYpslroZkV9Pt0dA2YcIuieeuSZWJhn+yUWoBUHO5Fw==}
     engines: {node: '>=20.8.1'}
     hasBin: true
@@ -2806,7 +2806,7 @@ packages:
       '@semantic-release/npm': 11.0.2(semantic-release@23.0.2)
       '@semantic-release/release-notes-generator': 12.1.0(semantic-release@23.0.2)
       aggregate-error: 5.0.0
-      cosmiconfig: 9.0.0(typescript@5.3.3)
+      cosmiconfig: 9.0.0(typescript@5.4.2)
       debug: 4.3.4
       env-ci: 11.0.0
       execa: 8.0.1
@@ -3132,8 +3132,8 @@ packages:
     engines: {node: '>=16'}
     dev: true
 
-  /typescript@5.3.3:
-    resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+  /typescript@5.4.2:
+    resolution: {integrity: sha512-+2/g0Fds1ERlP6JsakQQDXjZdZMM+rqpamFZJEKh4kwTIn3iDkgKtby0CeNd5ATNZ4Ry1ax15TMx0W2V+miizQ==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true

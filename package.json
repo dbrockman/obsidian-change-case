@@ -18,7 +18,7 @@
 	},
 	"devDependencies": {
 		"@semantic-release/git": "^10.0.1",
-		"@types/node": "^20.11.24",
+		"@types/node": "^20.11.25",
 		"builtin-modules": "^3.3.0",
 		"cz-conventional-changelog": "^3.3.0",
 		"esbuild": "^0.20.1",
@@ -26,7 +26,7 @@
 		"semantic-release": "^23.0.2",
 		"tslib": "^2.6.2",
 		"tsx": "^4.7.1",
-		"typescript": "^5.3.3"
+		"typescript": "^5.4.2"
 	},
 	"engines": {
 		"node": ">=20",
