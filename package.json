@@ -14,7 +14,7 @@
 	"author": "David Brockman",
 	"license": "MIT",
 	"dependencies": {
-		"change-case": "5.0.2"
+		"change-case": "5.4.4"
 	},
 	"devDependencies": {
 		"@semantic-release/git": "^10.0.1",
