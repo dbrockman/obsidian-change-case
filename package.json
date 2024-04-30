@@ -19,7 +19,7 @@
 	"devDependencies": {
 		"@semantic-release/git": "^10.0.1",
 		"@types/node": "^20.12.7",
-		"builtin-modules": "^3.3.0",
+		"builtin-modules": "^4.0.0",
 		"cz-conventional-changelog": "^3.3.0",
 		"esbuild": "^0.20.2",
 		"obsidian": "^1.5.7",
