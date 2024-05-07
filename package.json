@@ -21,7 +21,7 @@
 		"@types/node": "^20.12.7",
 		"builtin-modules": "^4.0.0",
 		"cz-conventional-changelog": "^3.3.0",
-		"esbuild": "^0.20.2",
+		"esbuild": "^0.21.1",
 		"obsidian": "^1.5.7",
 		"semantic-release": "^23.0.8",
 		"tslib": "^2.6.2",
