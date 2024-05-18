@@ -1,6 +1,6 @@
 {
 	"name": "change-case",
-	"version": "2.0.31",
+	"version": "2.0.32",
 	"description": "Plugin to let you change the case (UPPER CASE, camelCase, snake_case, etc) of the current selection.",
 	"main": "main.js",
 	"type": "module",
