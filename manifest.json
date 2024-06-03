@@ -1,7 +1,7 @@
 {
 	"id": "change-case",
 	"name": "Change Case",
-	"version": "2.0.38",
+	"version": "2.0.39",
 	"minAppVersion": "0.15.0",
 	"description": "Plugin to let you change the case (UPPER CASE, camelCase, snake_case, etc) of the current selection.",
 	"author": "David Brockman",
