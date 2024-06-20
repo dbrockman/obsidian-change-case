@@ -18,7 +18,7 @@
 	},
 	"devDependencies": {
 		"@semantic-release/git": "^10.0.1",
-		"@types/node": "^20.14.6",
+		"@types/node": "^20.14.7",
 		"builtin-modules": "^4.0.0",
 		"cz-conventional-changelog": "^3.3.0",
 		"esbuild": "^0.21.4",
