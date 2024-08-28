@@ -1,6 +1,29 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
-		"config:recommended"
+		"config:recommended",
+		"mergeConfidence:all-badges",
+		"group:monorepos",
+		"group:nodeJs",
+		"group:jestPlusTSJest",
+		"group:jestPlusTypes",
+		":automergeMinor"
+	],
+	"vulnerabilityAlerts": {
+		"enabled": true
+	},
+	"respectLatest": true,
+	"packageRules": [
+		{
+			"matchDatasources": ["npm"],
+			"minimumReleaseAge": "3 days"
+		},
+		{
+			"matchPackageNames": [
+				"pnpm"
+			],
+			"minimumReleaseAge": null,
+			"prPriority": 10
+		}
 	]
 }
