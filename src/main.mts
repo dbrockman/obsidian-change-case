@@ -21,14 +21,16 @@ const normalizeSelection = ({
 		? [anchor, head]
 		: [head, anchor];
 
+// Fix: Preserve line breaks in case formatting
+ 
 const replaceAllSelections = (editor: Editor, fn: CmdFn): void => {
 	if (editor.somethingSelected()) {
 		const locale = getLang();
 		editor.transaction({
 			changes: editor.listSelections().map((selection) => {
 				const [from, to] = normalizeSelection(selection);
-				const str = editor.getRange(from, to).normalize();
-				return { from, to, text: fn(str, { locale }) };
+				const str = editor.getRange(from, to).split('\n').map(line => fn(line, { locale })).join('\n');
+				return { from, to, text: str };
 			}),
 		});
 	}
