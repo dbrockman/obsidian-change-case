@@ -7,7 +7,8 @@
 		"group:nodeJs",
 		"group:jestPlusTSJest",
 		"group:jestPlusTypes",
-		":automergeMinor"
+		":automergeMinor",
+		":semanticCommitTypeAll(chore)"
 	],
 	"vulnerabilityAlerts": {
 		"enabled": true
