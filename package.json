@@ -23,7 +23,7 @@
 		"cz-conventional-changelog": "^3.3.0",
 		"esbuild": "^0.27.0",
 		"obsidian": "^1.6.6",
-		"semantic-release": "^24.0.0",
+		"semantic-release": "^25.0.0",
 		"tslib": "^2.6.3",
 		"tsx": "^4.17.0",
 		"typescript": "^5.5.4"
