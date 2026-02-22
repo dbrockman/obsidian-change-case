@@ -29,7 +29,7 @@ importers:
         version: 0.27.3
       obsidian:
         specifier: ^1.6.6
-        version: 1.12.0(@codemirror/state@6.4.1)(@codemirror/view@6.30.0)
+        version: 1.12.2(@codemirror/state@6.4.1)(@codemirror/view@6.30.0)
       semantic-release:
         specifier: ^24.0.0
         version: 24.2.9(typescript@5.9.3)
@@ -1281,8 +1281,8 @@ packages:
     resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
     engines: {node: '>=0.10.0'}
 
-  obsidian@1.12.0:
-    resolution: {integrity: sha512-goA2DNTIPO3IRtsqzUs6UQmVJkwZayIKXnI3tLZX/NO+t1yl7YuZrfVEL1JyUkthCJyaZMn8WOlp7mX18acWxA==}
+  obsidian@1.12.2:
+    resolution: {integrity: sha512-DGAzpt6vo+sMDET/o8Zj26Bj2hbHrFsNUU8TtnzCyerO/OHksMFQnU9QEnPHVsOMstt/WnHXfC56j2r1syObWg==}
     peerDependencies:
       '@codemirror/state': 6.5.0
       '@codemirror/view': 6.38.6
@@ -2975,7 +2975,7 @@ snapshots:
 
   object-assign@4.1.1: {}
 
-  obsidian@1.12.0(@codemirror/state@6.4.1)(@codemirror/view@6.30.0):
+  obsidian@1.12.2(@codemirror/state@6.4.1)(@codemirror/view@6.30.0):
     dependencies:
       '@codemirror/state': 6.4.1
       '@codemirror/view': 6.30.0
