@@ -59,9 +59,12 @@ test("capital case", () => {
 	assert.strictEqual(name, "Capital Case");
 	assert.strictEqual(fn("", { locale }), "");
 	assert.strictEqual(fn("test string", { locale }), "Test String");
-	assert.strictEqual(fn("test_string", { locale }), "Test String");
-	assert.strictEqual(fn("testString", { locale }), "Test String");
+	assert.strictEqual(fn("test_string", { locale }), "Test_String");
+	assert.strictEqual(fn("testString", { locale }), "Teststring");
 	assert.strictEqual(fn("Test String", { locale }), "Test String");
+	assert.strictEqual(fn("it's a test", { locale }), "It's A Test");
+	assert.strictEqual(fn("James - sit down", { locale }), "James - Sit Down");
+	assert.strictEqual(fn("hello, world!", { locale }), "Hello, World!");
 });
 
 test("constant case", () => {
@@ -155,9 +158,13 @@ test("sentence case", () => {
 	assert.strictEqual(name, "Sentence case");
 	assert.strictEqual(fn("", { locale }), "");
 	assert.strictEqual(fn("Test string", { locale }), "Test string");
-	assert.strictEqual(fn("testString", { locale }), "Test string");
+	assert.strictEqual(fn("testString", { locale }), "Teststring");
 	assert.strictEqual(fn("TEST STRING", { locale }), "Test string");
-	assert.strictEqual(fn("test_string", { locale }), "Test string");
+	assert.strictEqual(fn("test_string", { locale }), "Test_string");
+	assert.strictEqual(fn("IT'S", { locale }), "It's");
+	assert.strictEqual(fn("don't stop", { locale }), "Don't stop");
+	assert.strictEqual(fn("James - sit down", { locale }), "James - sit down");
+	assert.strictEqual(fn("hello, world!", { locale }), "Hello, world!");
 });
 
 test("snake case", () => {
